@@ -1,0 +1,74 @@
+/* Cabinet Grotesk — local variable font (all weights 100–900 in one file) */
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('../fonts/CabinetGrotesk-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base reset */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  background: #180522;
+  color: #180522;
+}
+
+/* Floating animation for the phone mockup */
+@keyframes vartoFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+/* Hover: App Store badge in the hero */
+.appstore-badge {
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.appstore-badge:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 8px 20px rgba(202, 154, 234, 0.45));
+}
+
+/* Hover: "Get Varto" button in the final call-to-action */
+.cta-button {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(169, 104, 216, 0.4);
+}
+
+/* "How it works" steps: show the left dividers only when the three columns
+   sit side by side on wide screens. On narrow screens the steps stack and
+   align to the left edge. */
+@media (min-width: 1024px) {
+  .how-step-divider {
+    border-left: 1px solid #F2F2F7;
+    padding-left: 34px;
+  }
+}
+
+/* Footer links — hover purple glow, no lift */
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  transition: filter 0.2s ease;
+}
+.footer-link:hover {
+  filter: drop-shadow(0 0 4px rgba(202, 154, 234, 0.95)) drop-shadow(0 0 12px rgba(202, 154, 234, 0.6));
+}
+
+/* Logo links (header + footer) — hover purple glow, matching footer text links */
+.logo-link {
+  display: inline-block;
+  line-height: 0;
+  transition: filter 0.2s ease;
+}
+.logo-link:hover {
+  filter: drop-shadow(0 0 4px rgba(202, 154, 234, 0.95)) drop-shadow(0 0 12px rgba(202, 154, 234, 0.6));
+}

@@ -1,0 +1,39 @@
+/* Varto — shared styling for standalone content pages */
+/* (Privacy, Cookie, and future Terms / Support / Contact). Loaded after css/styles.css. */
+
+body { background:#fff; color:#180522; display:flex; flex-direction:column; min-height:100vh; }
+
+/* Dark header band so the light logo stays visible; logo links home */
+.legal-header { background:#180522; padding:26px 8vw; }
+.legal-header a { display:inline-block; line-height:0; }
+.legal-header img { height:22px; width:auto; display:block; }
+
+/* Readable content column */
+.legal-wrap { max-width:728px; margin:0 auto; padding:72px 24px 100px; flex:1 0 auto; }
+
+.legal-eyebrow { font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#A968D8; }
+.legal-wrap h1 { font-size:42px; font-weight:800; letter-spacing:-0.035em; line-height:1.08; margin:14px 0 0; color:#180522; text-wrap:balance; }
+.legal-updated { font-size:15px; color:#8A8A90; margin:16px 0 0; }
+
+.company-block { margin:30px 0 0; padding:22px 24px; background:#FAF4FD; border:1px solid #EEE3F6; border-radius:14px; font-size:15px; line-height:1.75; color:#48484E; }
+.company-block strong { color:#180522; font-weight:600; }
+
+/* Major parts: Privacy Policy / Cookie Policy */
+.legal-wrap h2 { font-size:32px; font-weight:800; letter-spacing:-0.03em; color:#180522; margin:66px 0 0; padding-top:42px; border-top:1px solid #EDE4F3; text-wrap:balance; }
+
+/* Numbered sections */
+.legal-wrap h3 { font-size:21px; font-weight:700; letter-spacing:-0.02em; color:#180522; margin:40px 0 0; }
+
+.legal-wrap p { font-size:18px; line-height:1.72; color:#48484E; margin:14px 0 0; }
+.legal-wrap ul { margin:14px 0 0; padding-left:22px; }
+.legal-wrap li { font-size:18px; line-height:1.72; color:#48484E; margin:8px 0 0; }
+
+.legal-wrap a { color:#7A2CC4; text-decoration:underline; text-underline-offset:2px; }
+.legal-wrap a:hover { color:#61168C; }
+
+/* Tables scroll horizontally on narrow screens instead of breaking the layout */
+.table-scroll { overflow-x:auto; margin:22px 0 0; -webkit-overflow-scrolling:touch; border:1px solid #EFE7F5; border-radius:14px; }
+.legal-wrap table { width:100%; border-collapse:collapse; font-size:15px; min-width:540px; }
+.legal-wrap th { text-align:left; vertical-align:top; background:#FAF4FD; color:#180522; font-weight:700; padding:13px 16px; border-bottom:2px solid #E6D6F2; }
+.legal-wrap td { text-align:left; vertical-align:top; color:#48484E; line-height:1.6; padding:13px 16px; border-bottom:1px solid #EFE7F5; }
+.legal-wrap tbody tr:last-child td { border-bottom:none; }
